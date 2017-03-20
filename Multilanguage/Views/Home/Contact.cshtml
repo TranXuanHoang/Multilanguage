@@ -1,0 +1,22 @@
+﻿@model Multilanguage.User
+
+@{
+    ViewBag.Title = @Multilanguage.Resources.IndexResource.ContactLabel;
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    @Html.DisplayFor(model => model.Name)<br />
+    @Html.DisplayFor(model => model.Description)<br />
+    <br />
+    @Multilanguage.Resources.IndexResource.PostNumber<br />
+    @Multilanguage.Resources.IndexResource.Address<br />
+    <abbr title="Phone">@Multilanguage.Resources.IndexResource.PhoneNumberLabel</abbr>
+    @Multilanguage.Resources.IndexResource.PhoneNumber
+</address>
+
+<address>
+    <strong>@Multilanguage.Resources.IndexResource.OfficeEmail</strong>   <a href="mailto:tranxuan.hoang.s@quick.jp">tranxuan.hoang.s@quick.jp</a><br />
+    <strong>@Multilanguage.Resources.IndexResource.PersonalEmail</strong> <a href="mailto:hoangtx@jaist.ac.jp">hoangtx@jaist.ac.jp</a>
+</address>
